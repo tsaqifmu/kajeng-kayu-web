@@ -1,0 +1,505 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  padding-top: 56px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  height: 1000px;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 56px;
+  background-color: white;
+  transition: 0.3s;
+  z-index: 99999;
+}
+
+nav.scrolled-down {
+  height: 80px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.14);
+}
+
+nav.scrolled-down img {
+  scale: 1.25;
+}
+
+nav img {
+  height: 40px;
+  transform-origin: 0% 50%;
+  transition: 0.3s;
+}
+nav ul li a {
+  color: rgb(97, 94, 94);
+}
+nav ul li a:hover {
+  color: rgb(97, 94, 94);
+  color: rgb(32, 31, 31);
+  font-size: 18px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.container {
+  margin: 0 10%;
+  width: 80%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+aside img {
+  width: 600px;
+}
+
+.svg1 {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+
+.content1 {
+  width: 100%;
+  height: 100vh;
+}
+#home article {
+  width: 50%;
+}
+#home article h1 {
+  font-size: 90px;
+  margin: 0;
+  font-weight: 900;
+  line-height: 5.5rem;
+  color: rgb(97, 94, 94);
+}
+#home article a {
+  font-size: 15px;
+  padding: 10px;
+  width: fit;
+  color: rgb(73, 71, 71);
+  margin: 0;
+  font-weight: 900;
+  line-height: 5.5rem;
+  border-radius: 7px;
+}
+#home article a span {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+#home article a:hover {
+  transition: 0.3s;
+  background-color: rgb(79, 78, 76);
+  color: rgb(222, 216, 216);
+}
+#home article h3 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  margin: 0;
+  color: rgb(97, 94, 94);
+}
+#home article p {
+  color: rgb(97, 94, 94);
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+}
+
+/* END OF HOME */
+
+#info {
+  background-color: rgb(76, 94, 82);
+}
+#info .content2 {
+  padding: 40px 0;
+  text-align: center;
+  color: rgb(229, 229, 226);
+}
+#info .content2 > h1 {
+  font-size: 70px;
+}
+#info .content2 .articles {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+#info .content2 article {
+  height: fit-content;
+  width: 400px;
+  border-radius: 10px;
+  text-align: start;
+  color: rgb(94, 93, 93);
+  transition: 0.3s;
+  background-color: rgb(229, 229, 226);
+}
+#info .content2 .articles article:hover {
+  background-color: rgb(169, 190, 161);
+  color: rgb(229, 229, 226);
+}
+#info .content2 .articles img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+#info .content2 .articles article div {
+  padding: 20px;
+}
+#info .content2 .articles article div h1 {
+  font-weight: 800;
+}
+
+/* END OF INFO1 */
+
+#info2 {
+  height: 900px;
+}
+#info2 > div {
+  position: relative;
+  padding: 90px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info2 article h1 {
+  width: 50%;
+  font-size: 100px;
+  margin: 0;
+  font-weight: 900;
+  line-height: 6rem;
+  color: rgb(97, 94, 94);
+}
+#info2 article p {
+  font-size: 20px;
+  margin-top: 40px;
+  width: 40%;
+  color: rgb(97, 94, 94);
+  line-height: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+#info2 aside {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#info2 aside img {
+  scale: 0.98;
+}
+#info2 aside div {
+  color: rgb(97, 94, 94);
+  position: absolute;
+  right: 0;
+  top: 240px;
+  line-height: 4px;
+}
+#info2 div > div h3,
+p {
+  margin: 0;
+}
+
+/* END OF INFO2 */
+
+footer {
+  background-color: rgb(216, 219, 217);
+  padding: 0 0 20px 0;
+}
+footer > div {
+  padding: 30px 0;
+}
+footer > div > div {
+  display: flex;
+}
+footer > div > div > div > div p,
+a {
+  color: rgb(97, 94, 94);
+  padding: 4px 0;
+}
+footer > div > div ul {
+  margin: 20px 0 0 250px;
+}
+footer > div > div ul li {
+  padding: 5px;
+  color: rgb(97, 94, 94);
+}
+footer > div > div ul li a {
+  color: rgb(97, 94, 94);
+}
+footer > div > div ul li a:hover {
+  color: rgb(32, 31, 31);
+  font-size: 18px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+footer > div > div > div {
+  margin: 20px 0 0 0;
+}
+footer > div > div > div h1 {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(97, 94, 94);
+}
+footer > h1 {
+  margin-top: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .hidden {
+    display: none;
+  }
+  .block {
+    display: block;
+  }
+
+  .link {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    transform: translate(-50% -50%);
+    padding: 12px;
+    gap: 10px;
+    background-color: white;
+  }
+  nav ul li a:hover {
+    color: rgb(97, 94, 94);
+    color: rgb(32, 31, 31);
+    font-size: 16px;
+  }
+
+  /* END OF NAVBAR */
+
+  .content1 {
+    width: 100%;
+    height: 100%;
+  }
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #home article {
+    width: 100%;
+  }
+
+  #home article h3 {
+    font-size: 15px;
+    padding: 20px 0 0 0;
+  }
+  #home article h1 {
+    font-size: 45px;
+    padding: 10px 0 0 0;
+    line-height: 2.8rem;
+  }
+  #home article p {
+    color: rgb(97, 94, 94);
+    letter-spacing: 0.05em;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  #home svg {
+    display: none;
+  }
+  aside img {
+    width: 80%;
+  }
+
+  /* END OF HOME */
+  #info .content2 > h1 {
+    font-size: 40px;
+  }
+  #info .content2 > P {
+    font-size: 12px;
+  }
+
+  #info .content2 article {
+    width: 80%;
+  }
+
+  /* END OF INFO */
+
+  #info2 {
+    height: 100%;
+  }
+  #info2 > div {
+    padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #info2 article h1 {
+    width: 100%;
+    font-size: 40px;
+    margin: 0;
+    font-weight: 900;
+    line-height: 2.7rem;
+    color: rgb(97, 94, 94);
+  }
+  #info2 article p {
+    font-size: 14px;
+    margin-top: 20px;
+    width: 100%;
+    color: rgb(97, 94, 94);
+    line-height: 1.25rem;
+    letter-spacing: 0.05em;
+  }
+
+  #info2 aside {
+    position: unset;
+  }
+  #info2 aside img {
+    width: 300px;
+    scale: 1;
+  }
+  #info2 aside > div {
+    color: rgb(97, 94, 94);
+    position: unset;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #info2 aside > div h3 {
+    margin: 0;
+  }
+
+  /* END OF INFO 2 */
+
+  footer > div a img {
+    width: 200px;
+  }
+  footer > div > div {
+    display: flex;
+    flex-direction: column;
+  }
+  footer > div > div > div > div p,
+  a {
+    color: rgb(97, 94, 94);
+    padding: 4px 0;
+    font-size: 14px;
+  }
+
+  footer > div > div ul {
+    margin: 15px 0 0 -45px;
+  }
+  footer > div > div ul li {
+    padding: 5px;
+    color: rgb(97, 94, 94);
+  }
+
+  /* END OF FOOTER */
+}
+@media screen and (min-width: 801px) and (max-width: 1100px) {
+  #hamburger,
+  #cross {
+    display: none;
+  }
+  #home article h3 {
+    font-size: 16px;
+    padding: 20px 0 0 0;
+  }
+  #home article h1 {
+    font-size: 55px;
+    padding: 10px 0 0 0;
+    line-height: 4rem;
+  }
+  #home article p {
+    color: rgb(97, 94, 94);
+    letter-spacing: 0.05em;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  aside img {
+    width: 400px;
+  }
+
+  /* END OF HOME */
+
+  #info2 {
+    height: 100%;
+  }
+  #info2 > div {
+    padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #info2 article h1 {
+    width: 100%;
+    font-size: 70px;
+    margin: 0;
+    font-weight: 900;
+    line-height: 4.5rem;
+    color: rgb(97, 94, 94);
+  }
+  #info2 article p {
+    font-size: 17px;
+    margin-top: 30px;
+    width: 100%;
+    color: rgb(97, 94, 94);
+    line-height: 1.25rem;
+    letter-spacing: 0.05em;
+  }
+
+  #info2 aside {
+    position: unset;
+
+  }
+  #info2 aside img {
+    scale: 1;
+  }
+  #info2 aside > div {
+    color: rgb(97, 94, 94);
+    position: unset;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  #info2 aside > div h3 {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  #hamburger,
+  #cross {
+    display: none;
+  }
+}
